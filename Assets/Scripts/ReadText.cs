@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ReadText : MonoBehaviour
 {
-    public string playerName;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +18,7 @@ public class ReadText : MonoBehaviour
 
     public void GetText(string inputText)
     {
-        playerName = inputText;
-        Debug.Log(playerName);
+        DataManager.playerName = inputText;
+        Debug.Log(DataManager.playerName);
     }
 }

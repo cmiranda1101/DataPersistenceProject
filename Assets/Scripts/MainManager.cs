@@ -13,7 +13,6 @@ public class MainManager : MonoBehaviour
     public Text ScoreText;
     public Text highScoreText;
     public GameObject GameOverText;
-    [SerializeField] DataManager dataManager;
     
     private bool m_Started = false;
     private int m_Points;
@@ -84,7 +83,7 @@ public class MainManager : MonoBehaviour
         if(m_Points > highScore)
         {
             highScore = m_Points;
-            highScoreText.text = ("High Score: " +  + highScore);
+            highScoreText.text = ("High Score: " + DataManager.playerName + highScore);
         }
     }
 }
