@@ -20,4 +20,11 @@ public class DataManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
+    [System.Serializable]
+    class SaveData
+    {
+        public string bestPlayerName;
+        public int highScore;
+    }
 }
